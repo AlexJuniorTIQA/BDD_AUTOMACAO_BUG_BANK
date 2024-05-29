@@ -9,11 +9,6 @@ Lombok
 
 Projeto desenvolvido em cima do site https://bugbank.netlify.app/
 
-Cenário de teste:
-- Teste de Login Com Sucesso
-
-
-
 
 MassaDeDados.xlsx - Massa de dados para consumo do teste, campos com input numérico devem ser inseridos com aspas simples " ' " para conversão do Excel para String
 
