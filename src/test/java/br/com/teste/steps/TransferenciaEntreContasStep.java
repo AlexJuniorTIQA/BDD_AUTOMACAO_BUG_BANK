@@ -45,8 +45,8 @@ public class TransferenciaEntreContasStep {
 		homeLogic.clicaBtnRegistrar();
 	}
 
-	@Quando("^crio uma conta sem saldo guardando as informações$")
-	public void crio_uma_conta_sem_saldo_guardando_as_informações()throws Exception {
+	@Quando("crio uma conta sem saldo guardando as informacoes")
+	public void crio_uma_conta_sem_saldo_guardando_as_informacoes()throws Exception {
 		cadastroLogic.insereEmail(massaDeDados.getEmail(primeiraConta));
 		cadastroLogic.insereNome(massaDeDados.getNome(primeiraConta));
 		cadastroLogic.insereSenha(massaDeDados.getSenha(primeiraConta));
@@ -60,8 +60,8 @@ public class TransferenciaEntreContasStep {
 
 	}
 
-	@E("crio uma segunda conta com saldo guardando as informações")
-	public void crio_uma_segunda_conta_com_saldo_guardando_as_informações() throws Exception {
+	@E("crio uma segunda conta com saldo guardando as informacoes")
+	public void crio_uma_segunda_conta_com_saldo_guardando_as_informacoes() throws Exception {
 
 		homeLogic.clicaBtnRegistrar();
 		cadastroLogic.insereEmail(massaDeDados.getEmail(segundaConta));
@@ -78,7 +78,7 @@ public class TransferenciaEntreContasStep {
 
 
 	}
-	@E("^efetuo o login transferindo saldo para primeira conta$")
+	@E("efetuo o login transferindo saldo para primeira conta")
 	public void efetuo_o_login_transferindo_saldo_para_primeira_conta() throws Exception {
 		int primeiraConta = 1;
 		int segundaConta = 2;
